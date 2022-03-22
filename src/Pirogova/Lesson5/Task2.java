@@ -13,5 +13,12 @@ public class Task2 {
             b+=2;
             System.out.print(mass[i] + " ");
         }
+        System.out.println();
+        int c = 99;
+        for (int i = 0; i < count; i++) {
+            mass[i] = c;
+            c-=2;
+            System.out.print(mass[i] + " ");
+        }
     }
 }
