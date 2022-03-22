@@ -10,5 +10,16 @@ public class Task4 {
             a[i] = r.nextInt(21);
             System.out.print(a[i] + " ");
         }
+        System.out.println();
+        for (int i = 0; i < 20; i++) {
+            if(i%2 != 0){
+                a[i] = 0;
+                System.out.print(a[i] + " ");
+            }
+            else{
+                System.out.print(a[i] + " ");
+            }
+
+        }
     }
 }
