@@ -7,6 +7,7 @@ public class Task8 {
         int[]a = new int[10];
         int[]b =new int[10];
         double[]c = new double[10];
+        int count = 0;
         Random r = new Random();
         for(int i=0;i<10;i++){
             a[i]=r.nextInt(9);
@@ -15,7 +16,10 @@ public class Task8 {
                 c[i]=0;
             }
             else{
-                c[i]=a[i] / b[i];
+                c[i]=(double)a[i] / b[i];
+                if(a[i]%b[i]==0){
+                    count++;
+                }
             }
         }
         System.out.print("Первый массив: ");
@@ -29,5 +33,7 @@ public class Task8 {
         System.out.print("Третий массив: ");
         for (int i = 0; i < 10; i++) {
             System.out.print(c[i] + " ");}
+        System.out.println();
+        System.out.println("Количество целых чисел: " + count);
     }
 }
