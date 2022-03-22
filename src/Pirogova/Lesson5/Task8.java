@@ -14,6 +14,7 @@ public class Task8 {
             b[i]=r.nextInt(9);
             if(b[i]==0){
                 c[i]=0;
+                count++;
             }
             else{
                 c[i]=(double)a[i] / b[i];
