@@ -20,7 +20,7 @@ public class Task7 {
         System.out.println("Максимальное число: " + max);
         for (int i = mass.length-1; i > 0; i--) {
             if(mass[i]==max){
-                System.out.println("Последний индекс максимального числа в массиве: " + i);
+                System.out.println("Последний индекс максимального числа: " + i);
             }
 
         }
