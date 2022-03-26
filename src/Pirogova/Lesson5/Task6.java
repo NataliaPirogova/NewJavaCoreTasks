@@ -11,14 +11,18 @@ public class Task6 {
             System.out.print(mass[i] + " ");
         }
         System.out.println();
+        int count = 0;//кол-во последовательностей
         for (int i = 0; i < mass.length; i++) {
             if(mass[i]<mass[i+1]){
-               continue;
+                count++;
             }
             else{
                 System.out.println("Нет строго возрастающей последовательности");
                 break;
             }
+        }
+        if(count==(mass.length-1)){
+            System.out.println("Массив является строго возрастающей последовательностью");
         }
     }
 }
