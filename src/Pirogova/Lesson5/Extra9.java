@@ -17,6 +17,6 @@ public class Extra9 {
                 min = mass[i];
             }
         }
-        System.out.println("Минимальный элемент с четным индексом массива: " + min);
+        System.out.println("Минимальный элемент с четным индексом массива:  " + min);
     }
 }
