@@ -7,13 +7,18 @@ import java.util.Scanner;
 public class Task10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число больше 3");
-        int n = sc.nextInt();
+        int n;
+        while(true){
+            System.out.println("Введите число больше 3");
+            n =  sc.nextInt();
         if(n<=3){
             System.out.println("Введено неверное число");
+        sc.nextLine();}
+        else{
+            break;
         }
-        else {
-            int[] mass = new int[n];
+        }
+        int[] mass = new int[n];
             Random r = new Random();
             int count = 0;//кол-во четных элементов в первом массиве
             for (int i = 0; i < n; i++) {
@@ -32,6 +37,6 @@ public class Task10 {
                     System.out.print(mass2[j] + " ");
                 }
             }
-        }
+
     }
 }
