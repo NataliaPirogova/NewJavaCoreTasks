@@ -1,7 +1,7 @@
 package Pirogova.Lesson6_8;
 
 public class T1_Phone {
-private int number;
+private long number;
 private String model;
 private int weight;
 
@@ -10,12 +10,13 @@ private int weight;
 public T1_Phone(){
 };
 
-public T1_Phone(int number, String model, int weight){
-    this();
+public T1_Phone(long number, String model, int weight){
+    this.number = number;
+    this.model = model;
     this.weight = weight;
 }
 
-    public T1_Phone(int number, String model){
+    public T1_Phone(long number, String model){
         this.number = number;
         this.model = model;
     }
@@ -28,7 +29,7 @@ public void recieveCall(String name){
     System.out.println("Звонит " + name);
 }
 
-    public int getNumber() {
-        return number;
+    public void getNumber() {
+        System.out.println(number);;
     }
 }
