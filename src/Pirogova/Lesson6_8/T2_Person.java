@@ -12,9 +12,8 @@ public void talk(){
     System.out.println(this.fullName + " говорит");
 }
 
-public T2_Person(){
-}
-
+    public T2_Person(){
+    }
 public T2_Person (String fullName, int age){
     this.fullName = fullName;
     this.age = age;
