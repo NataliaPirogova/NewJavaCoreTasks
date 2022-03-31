@@ -10,14 +10,38 @@ public class Computer {
     private int resourse;//ресурс полных циклов работы
     private int count;//количество включений-выключений
 
-    public void displayInfo(){
-        System.out.println("Характеристики компьютера: процессор - " + Processor + ", оперативная память - " + operational + ", жесткий диск - " + hsd + ", ресурс работы циклов - " + resourse);
+    public Computer(){
+
     }
 
+    public Computer(String Processor){
+        this.Processor = Processor;
+    }
+
+    public Computer(String Processor, int operational){
+        this (Processor);
+        this.operational = operational;
+    }
+
+    public Computer(String Processor, int operational, int hsd){
+        this(Processor, operational);
+        this.hsd = hsd;
+    }
+
+    public Computer(String Processor, int operational, int hsd, int resourse){
+        this(Processor, operational, hsd);
+        this.resourse = resourse;
+    }
+
+    public void displayInfo(){
+        System.out.println("Характеристики компьютера : процессор - " + Processor + ", оперативная память - " + operational + ", жесткий диск - " + hsd + ", ресурс работы циклов - " + resourse);
+    }
+
+    Random r = new Random();
+    int a = r.nextInt(2);
+    Scanner sc = new Scanner(System.in);
+
     public void turnON(){
-        Random r = new Random();
-        int a = r.nextInt(2);
-        Scanner sc = new Scanner(System.in);
         System.out.println("Введите число: 0 либо 1");
         int b = sc.nextInt();
         if(a==b){
@@ -33,9 +57,6 @@ public class Computer {
     }
 
     public void turnOFF(){
-        Random r = new Random();
-        int a = r.nextInt(2);
-        Scanner sc = new Scanner(System.in);
         System.out.println("Введите число: 0 либо 1");
         int b = sc.nextInt();
         if(a==b){
