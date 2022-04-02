@@ -1,21 +1,21 @@
-package Pirogova.Lesson6_8;
+package Pirogova.Lesson6_8.Phone;
 
-public class T1_Phone {
+public class Phone {
 private long number;
 private String model;
 private int weight;
 
 
 
-public T1_Phone(){
+public Phone(){
 }
 
-    public T1_Phone(long number, String model){
+    public Phone(long number, String model){
         this.number = number;
         this.model = model;
     }
 
-    public T1_Phone(long number, String model, int weight){
+    public Phone(long number, String model, int weight){
     this(number, model);
     this.weight = weight;
 }

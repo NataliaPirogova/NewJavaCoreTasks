@@ -1,6 +1,6 @@
-package Pirogova.Lesson6_8;
+package Pirogova.Lesson6_8.Matrix;
 
-public class T3_Matrix {
+public class Matrix {
     int a;//количество столбцов
     int b;//количество строк
     double[][] mass = new double[a][b];

@@ -1,6 +1,6 @@
-package Pirogova.Lesson6_8;
+package Pirogova.Lesson6_8.Person;
 
-public class T2_Person {
+public class Person {
 String fullName;
 int age;
 
@@ -12,9 +12,9 @@ public void talk(){
     System.out.println(this.fullName + " говорит");
 }
 
-    public T2_Person(){
+    public Person(){
     }
-public T2_Person (String fullName, int age){
+public Person(String fullName, int age){
     this.fullName = fullName;
     this.age = age;
 }
