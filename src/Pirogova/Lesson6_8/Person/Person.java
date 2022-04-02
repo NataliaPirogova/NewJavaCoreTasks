@@ -14,9 +14,11 @@ public void talk(){
 
     public Person(){
     }
+
 public Person(String fullName, int age){
     this.fullName = fullName;
-    this.age = age;
+    if(age>0 && age<120){
+    this.age = age;}
 }
 
 public void displayInfo(){
