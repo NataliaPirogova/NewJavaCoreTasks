@@ -7,8 +7,8 @@ public class Computer_objects {
         HP.displayInfo();
 
         for (int i = 0; i < 15; i++) {
-            HP.turnON();
-            HP.turnOFF();
+                HP.turnON();
+                HP.turnOFF();
         }
     }
 }

@@ -7,8 +7,9 @@ public class Computer {
     private String Processor;//процессор
     private int operational;//оперативка
     private int hsd;//жесткий диск
-    private int resourse;//ресурс полных циклов работы
+    private int resource;//ресурс полных циклов работы
     private int count;//количество включений-выключений
+    private boolean fail = false;//сгорели ли комп??
 
     public Computer(){
 
@@ -28,13 +29,13 @@ public class Computer {
         this.hsd = hsd;
     }
 
-    public Computer(String Processor, int operational, int hsd, int resourse){
+    public Computer(String Processor, int operational, int hsd, int resource){
         this(Processor, operational, hsd);
-        this.resourse = resourse;
+        this.resource = resource;
     }
 
     public void displayInfo(){
-        System.out.println("Характеристики компьютера : процессор - " + Processor + ", оперативная память - " + operational + ", жесткий диск - " + hsd + ", ресурс работы циклов - " + resourse);
+        System.out.println("Характеристики компьютера : процессор - " + Processor + ", оперативная память - " + operational + ", жесткий диск - " + hsd + ", ресурс работы циклов - " + resource);
     }
 
     Random r = new Random();
@@ -42,32 +43,37 @@ public class Computer {
     Scanner sc = new Scanner(System.in);
 
     public void turnON(){
-        System.out.println("Введите число: 0 либо 1");
-        int b = sc.nextInt();
-        if(a==b){
-            System.out.println("Вы ввели верное число, происходит загрузка компьютера");
-            count++;
-            if(count>resourse){
-                System.out.println("Превышен ресурс работы, компьютер сгорел");
+        while(!fail) {
+            System.out.println("Пробуем включить компьютер...");
+            System.out.println("Введите число: 0 либо 1");
+            int b = sc.nextInt();
+            if (a == b) {
+                System.out.println("Вы ввели верное число, происходит загрузка компьютера");
+                count++;
+                if (count > resource) {
+                    System.out.println("Превышен ресурс работы, компьютер сгорел");
+                    fail = true;
+                }
+            } else {
+                System.out.println("Ошибка!! Компьютер сгорел!");
+                fail = true;
             }
         }
-        else{
-            System.out.println("Ошибка!! Компьютер сгорел!");
         }
-    }
 
     public void turnOFF(){
-        System.out.println("Введите число: 0 либо 1");
-        int b = sc.nextInt();
-        if(a==b){
-            System.out.println("Вы ввели верное число, происходит загрузка компьютера");
-            count++;
-            if(count>resourse){
-                System.out.println("Превышен ресурс работы, компьютер сгорел");
+        while (!fail) {
+            System.out.println("Пробуем выключить компьютер...");
+            System.out.println("Введите число: 0 либо 1");
+            int b = sc.nextInt();
+            if (a == b) {
+                System.out.println("Вы ввели верное число, происходит загрузка компьютера");
+                count++;
+                if (count > resource) {
+                    System.out.println("Превышен ресурс работы, компьютер сгорел");
+                    fail = true;
+                }
             }
-        }
-        else{
-            System.out.println("Ошибка!! Компьютер сгорел!");
         }
     }
 
