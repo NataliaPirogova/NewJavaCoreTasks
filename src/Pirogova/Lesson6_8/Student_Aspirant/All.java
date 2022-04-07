@@ -8,6 +8,7 @@ public class All {
         students[1] = new Student("Oksana", "Vaskina", "group7", 5);
         students[2] = new Student("Kirill", "Teterev", "group21", 3.9);
 
+
         for (Student student: students) {
             student.getScholarship(student);
         }
