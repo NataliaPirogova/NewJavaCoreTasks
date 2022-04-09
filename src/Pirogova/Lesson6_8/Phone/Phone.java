@@ -28,6 +28,11 @@ public void recieveCall(String name){
     System.out.println("Звонит " + name);
 }
 
+public void receiveCall(String name, long number){
+    System.out.println("Звонит " + name);
+    System.out.println("Номер телефона: "+number);
+}
+
     public long getNumber() {
         return number;
     }

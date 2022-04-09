@@ -13,7 +13,7 @@ public class Phone_examples {
         Phone2.recieveCall("John");
         Phone2.getNumber();
         Phone3.displayInfo();
-        Phone3.recieveCall("Oleg");
+        Phone3.receiveCall("Oleg", 1723113);
         Phone3.getNumber();
     }
 }
