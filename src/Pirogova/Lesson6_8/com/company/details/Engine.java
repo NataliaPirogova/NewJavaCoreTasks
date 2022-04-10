@@ -2,21 +2,21 @@ package Pirogova.Lesson6_8.com.company.details;
 
 public class Engine {
     private int power;//мощность
-    private int company;//производительность
+    private int capacity;//производительность
 
     public Engine(){
     }
 
-    public Engine(int power, int company) {
+    public Engine(int power, int capacity) {
         this.power = power;
-        this.company = company;
+        this.capacity = capacity;
     }
 
     @Override
     public String toString() {
-        return "Engine{" +
-                "power=" + power +
-                ", company=" + company +
+        return "Двигатель{" +
+                "мощность=" + power +
+                ", производительность=" + capacity +
                 '}';
     }
 }

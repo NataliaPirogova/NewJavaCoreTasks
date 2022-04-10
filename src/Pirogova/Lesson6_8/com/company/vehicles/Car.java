@@ -5,7 +5,7 @@ import Pirogova.Lesson6_8.com.company.professions.Driver;
 
 public class Car {
     private String Type;//марка авто
-    private String Class;
+    private String Grade;
     private int weight;
     private Driver driver;
     private Engine engine;
@@ -13,9 +13,9 @@ public class Car {
     public Car(){
     }
 
-    public Car(String Type, String Class, int weight, Driver driver, Engine engine) {
+    public Car(String Type, String Grade, int weight, Driver driver, Engine engine) {
         this.Type = Type;
-        this.Class = Class;
+        this.Grade = Grade;
         this.weight = weight;
         this.driver = driver;
         this.engine = engine;
@@ -37,13 +37,47 @@ public class Car {
         System.out.println("Поворот налево");
     }
 
-    public void printInfo() {
-        System.out.println("Car{" +
-                "Type='" + Type + '\'' +
-                ", Class='" + Class + '\'' +
-                ", weight=" + weight +
-                "}, driver=" + driver +
-                "}, engine=" + engine +
-                '}');
+    public void printInfo(){
+        System.out.println("Марка авто "+Type+", класс авто "+ Grade +", вес авто "+weight+", "+driver+", "+engine);
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    public String getGrade() {
+        return Grade;
+    }
+
+    public void setGrade(String grade) {
+        Grade = grade;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 }
