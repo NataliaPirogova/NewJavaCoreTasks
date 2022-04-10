@@ -23,10 +23,18 @@ public class Reader {
     }
 
     public void takeBook(){
-        System.out.println(this.FIO + ", номер билета " + this.getNumber() + ", взял книгу");
+        System.out.println(this.FIO + ", номер билета " + this.number + ", взял книгу");
+    }
+
+    public void takeBook(int amount){
+        System.out.println(this.FIO + ", номер билета " + this.number + ", взял "+amount+" книг");
     }
 
     public void returnBook(){
-        System.out.println(this.FIO + ", номер билета " + this.getNumber() + ", вернул книгу");
+        System.out.println(this.FIO + ", номер билета " + this.number + ", вернул книгу");
+    }
+
+    public void returnBook(int amount){
+        System.out.println(this.FIO + ", номер билета " + this.number + ", вернул "+amount+" книг");
     }
 }
