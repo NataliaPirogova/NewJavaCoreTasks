@@ -1,28 +1,22 @@
 package Pirogova.Lesson6_8.Student_Aspirant;
 
 public class Aspirant extends Student{
-    private String firstName;
-    private String lastName;
-    private String group;
-    double averageMark;
     private String scientificWork;
 
     public Aspirant(){
     }
 
     public Aspirant(String firstName, String lastName, String group, double averageMark, String scientificWork) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.group = group;
-        this.averageMark = averageMark;
+        super(firstName, lastName, group, averageMark);
         this.scientificWork =scientificWork;
     }
+
     public void getScholarship(){
     if (averageMark==5){
-        System.out.println("Сумма стипендии 200 р");
+        System.out.println("Сумма стипендии "+this.getFirstName()+this.getLastName()+" 200 р");
     }
     else{
-        System.out.println("Сумма стипендии 180р");
+        System.out.println("Сумма стипендии "+this.getFirstName()+this.getLastName()+" 180р");
     }
     }
 

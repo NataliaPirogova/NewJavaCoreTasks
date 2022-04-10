@@ -16,7 +16,7 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public void getScholarship(Student student){
+    public void getScholarship(){
         if(averageMark==5){
             System.out.println("Сумма стипендии " + firstName + lastName + " равна 100 р");
         }
