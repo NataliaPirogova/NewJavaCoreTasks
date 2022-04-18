@@ -36,4 +36,10 @@ public void receiveCall(String name, long number){
     public long getNumber() {
         return number;
     }
+
+    public void sendMessage(long ...args){
+        for (long number: args) {
+            System.out.println("Отправлено сообщение на номер: "+number);
+        }
+    }
 }

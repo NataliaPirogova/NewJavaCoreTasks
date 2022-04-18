@@ -15,5 +15,6 @@ public class Phone_examples {
         Phone3.displayInfo();
         Phone3.receiveCall("Oleg", 1723113);
         Phone3.getNumber();
+        Phone1.sendMessage(911, 102,103);
     }
 }
