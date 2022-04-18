@@ -30,11 +30,25 @@ public class Reader {
         System.out.println(this.FIO + ", номер билета " + this.number + ", взял "+amount+" книг");
     }
 
+    public void takeBook(String...books){
+        System.out.print(this.FIO+" взял книги: ");
+        for (String book: books) {
+            System.out.print(book+", ");
+        }
+    }
+
     public void returnBook(){
         System.out.println(this.FIO + ", номер билета " + this.number + ", вернул книгу");
     }
 
     public void returnBook(int amount){
         System.out.println(this.FIO + ", номер билета " + this.number + ", вернул "+amount+" книг");
+    }
+
+    public void returnBook(String...books){
+        System.out.print(this.FIO+" вернул книги: ");
+        for (String book: books) {
+            System.out.print(book+", ");
+        }
     }
 }

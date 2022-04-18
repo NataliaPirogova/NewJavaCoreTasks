@@ -5,5 +5,6 @@ public class Reader_objects {
         Reader Petya = new Reader("Петров Петр Васильевич", "Химический факультет", "17.02.1994",1442988);
         Petya.takeBook();
         Petya.returnBook();
+        Petya.takeBook("Приключения","Словарь","Энциклопедия");
     }
 }
