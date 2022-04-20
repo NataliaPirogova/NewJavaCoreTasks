@@ -1,5 +1,7 @@
 package Pirogova.Lesson10;
 
+import java.util.Random;
+
 public class Car {
     private String brand;
     private int speed;
@@ -43,5 +45,14 @@ public class Car {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public String start (){
+        Random r = new Random();
+        int a = r.nextInt(20);
+        try{
+            double b = a/2;
+
+        }
     }
 }
