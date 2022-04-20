@@ -2,7 +2,7 @@ package Pirogova.Lesson10;
 
 public class MyException extends Exception{
     private int detail;
-    MyException(){
+    MyException(int a){
         detail=a;
     }
     public String toString(){

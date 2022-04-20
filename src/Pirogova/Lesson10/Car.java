@@ -51,8 +51,8 @@ public class Car {
         Random r = new Random();
         int a = r.nextInt(20);
         System.out.println(a);
-        if (a/2==0){
-            throw new MyException();
+        if (a%2==0){
+            throw new MyException (a);
         }
         else {
             System.out.println("Автомобиль марки " + this.brand + " завелся.");
