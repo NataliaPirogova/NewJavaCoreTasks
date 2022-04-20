@@ -47,12 +47,15 @@ public class Car {
         this.price = price;
     }
 
-    public String start (){
+    public void start ()  throws MyException{
         Random r = new Random();
         int a = r.nextInt(20);
-        try{
-            double b = a/2;
-
+        System.out.println(a);
+        if (a/2==0){
+            throw new MyException();
+        }
+        else {
+            System.out.println("Автомобиль марки " + this.brand + " завелся.");
         }
     }
 }
