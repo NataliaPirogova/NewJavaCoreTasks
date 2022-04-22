@@ -8,11 +8,28 @@ public class CarTest {
 
         try{
             Car1.start();
+        }
+        catch (MyException e){
+            StringBuilder StrB = new StringBuilder("caught ");
+            StrB.append(e);
+            System.out.println(StrB);
+        }
+        try{
             Car2.start();
             Car3.start();
         }
         catch (MyException e){
-            System.out.println("caught "+e);
+            StringBuilder StrB = new StringBuilder("caught ");
+            StrB.append(e);
+            System.out.println(StrB);
+        }
+        try{
+            Car3.start();
+        }
+        catch (MyException e){
+            StringBuilder StrB = new StringBuilder("caught ");
+            StrB.append(e);
+            System.out.println(StrB);
         }
     }
 }

@@ -9,27 +9,13 @@ public class StringTest {
         System.out.println(st1.substring(2,13));
         //задание 2
         System.out.println(st1);
-        System.out.println("заменяем все '"+st1.charAt(3)+"' на "+st1.charAt(0));
+        StringBuilder SB = new StringBuilder();
+        SB.append("заменяем все '");
+        SB.append(st1.charAt(3));
+        SB.append("' на '");
+        SB.append(st1.charAt(0));
+        SB.append("'");
+        System.out.println(SB);
         System.out.println(st1.replace('a','T'));
-        //задание 3
-        String[]mass = new String[5];
-        mass[0]="cat";
-        mass[1]="moon";
-        mass[2]="Sun";
-        mass[3]="holiday";
-        mass[4]="sister";
-        String[]polindrom = new String[5];
-        int i = 0;
-        for (String element:
-             mass) {
-            StringBuilder SB = new StringBuilder(element);
-            SB.reverse();
-            System.out.println(element.concat(SB.toString()));
-            polindrom[i]= element.concat(SB.toString());
-            i++;
-        }
-        for (int j = 0; j < 5; j++) {
-            System.out.println(polindrom[j]);
-        }
     }
 }

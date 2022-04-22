@@ -55,7 +55,10 @@ public class Car {
             throw new MyException (a);
         }
         else {
-            System.out.println("Автомобиль марки " + this.brand + " завелся.");
+            StringBuilder SB = new StringBuilder("Автомобиль марки ");
+            SB.append(this.brand);
+            SB.append(" завелся.");
+            System.out.println(SB);
         }
     }
 }

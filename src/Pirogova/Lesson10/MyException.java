@@ -6,6 +6,9 @@ public class MyException extends Exception{
         detail=a;
     }
     public String toString(){
-        return "Число "+detail+" является исключением, т.к. четное";
+        StringBuilder SB = new StringBuilder("Число ");
+        SB.append(detail);
+        SB.append(" является исключением, т.к. четное");
+        return SB.toString();
     }
 }
