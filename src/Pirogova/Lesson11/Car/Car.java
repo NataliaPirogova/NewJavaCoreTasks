@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Car implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2l;
     private String model;
     private int speed;
     private int price;
@@ -40,5 +40,14 @@ public class Car implements Serializable {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", speed=" + speed +
+                ", price=" + price +
+                '}';
     }
 }
