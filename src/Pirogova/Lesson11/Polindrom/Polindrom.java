@@ -1,17 +1,20 @@
 package Pirogova.Lesson11.Polindrom;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class Polindrom {
     public static void main(String[] args) {
-        BufferedReader BfR = null;
-        File PoliWords = new File("D:\\NewJavaCoreTasks\\src\\Pirogova\\Lesson11\\Polindrom\\PoliWords.txt");
+       File PoliWords = new File("D:/NewJavaCoreTasks/src/Pirogova/Lesson11/Polindrom/poliWords.txt");
 
-        try {BfR = new BufferedReader(new FileReader("D:\\NewJavaCoreTasks\\src\\Pirogova\\Lesson11\\Polindrom\\original words.txt"));
+        try (BufferedReader BfR = new BufferedReader(new FileReader("D:\\NewJavaCoreTasks\\src\\Pirogova\\Lesson11\\Polindrom\\original words.txt"));
+             BufferedWriter BfW = new BufferedWriter(new FileWriter("D:/NewJavaCoreTasks/src/Pirogova/Lesson11/Polindrom/poliWords.txt"))){
+        int c;
+            while ((c=BfR.read())!=-1){
+
+        }
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
