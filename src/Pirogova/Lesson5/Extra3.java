@@ -19,7 +19,7 @@ public class Extra3 {
         System.out.println("Введите число C");
         int C = sc.nextInt();
         int count = 0;
-        double sum = 0;
+        int sum = 0;
         double average;
         for (int i = 0; i < n; i++) {
            if(mass[i]>C){
@@ -27,7 +27,7 @@ public class Extra3 {
                sum+=mass[i];
            }
         }
-        average = sum/count;
+        average = (double) sum/count;
         if(sum==0){
             System.out.println("В массиве нет чисел больше " + C);
         }else
