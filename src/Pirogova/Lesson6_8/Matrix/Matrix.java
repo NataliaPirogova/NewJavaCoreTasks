@@ -20,9 +20,9 @@ public class Matrix {
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
                 mass[i][j]=r.nextInt(10);
-                System.out.print(mass[i][j] + " ");
+//                System.out.print(mass[i][j] + " ");
             }
-            System.out.println();
+//            System.out.println();
         }
     }
 
