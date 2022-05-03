@@ -6,7 +6,7 @@ public class Extra2 {
     public static void main(String[] args) {
         int[] mass = new int[10];
         Random r = new Random();
-        double sum = 0;//сумма нечетных элементов
+        int sum = 0;//сумма нечетных элементов
         double average;//среднее арифметическое
         int count = 0;//количество нечетных элементов
         for (int i = 0; i < mass.length; i++) {
@@ -18,7 +18,7 @@ public class Extra2 {
             }
         }
         System.out.println();
-        average = sum/count;
+        average = (double) sum/count;
         System.out.println("Среднее арифметическое нечетных элементов: " + average);
     }
 }
