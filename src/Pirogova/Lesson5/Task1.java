@@ -4,12 +4,9 @@ public class Task1 {
     public static void main(String[] args) {
         int count = 0;
         for(int b = 2; b <= 20; b+=2){
-            if (b%2 == 0){
-                count++;}
-            else {
-                continue;
-            }
+            count++;
         }
+
         int[]a = new int[count];
         int c = 2;
         for (int i = 0; i < count; i++) {
@@ -17,6 +14,7 @@ public class Task1 {
             System.out.print(a[i] + " ");
             c+=2;
         }
+        System.out.println();
         int d = 2;
         for (int i = 0; i < count; i++) {
             a[i] = d;
