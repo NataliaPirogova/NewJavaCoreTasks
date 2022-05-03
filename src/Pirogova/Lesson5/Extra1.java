@@ -19,6 +19,10 @@ public class Extra1 {
             }
         }
         System.out.println();
-        System.out.println("Произведение чисел кратных 3 равно: " + proiz);
+        if(proiz==1){
+            System.out.println("В массиве отсутствуют числа, кратные 3");
+        }else {
+            System.out.println("Произведение чисел кратных 3 равно: " + proiz);
+        }
     }
 }
