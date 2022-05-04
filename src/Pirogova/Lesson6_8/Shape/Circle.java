@@ -14,6 +14,13 @@ public class Circle extends Shape{
         System.out.println("Цвет: "+this.getColor()+", координаты: "+a+", "+b);
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof Circle)) return false;
+        Circle o = (Circle) obj;
+        return (this.a==o.a && this.b==o.b);
+    };
+
     public int getA() {
         return a;
     }
