@@ -17,6 +17,13 @@ public class Rectangle extends Shape{
     }
 
     @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof Rectangle)) return false;
+        Rectangle o = (Rectangle) obj;
+        return (this.a==o.a && this.b==o.b && this.c==o.c && this.d==o.d);
+    };
+
+    @Override
     public void draw() {
         System.out.println("Цвет: "+this.getColor()+",  координаты: "+a+", "+b+", "+c+", "+d);
     }
