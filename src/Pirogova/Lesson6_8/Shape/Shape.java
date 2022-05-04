@@ -8,6 +8,12 @@ public abstract class Shape {
         this.color=color;
     }
 
+    public boolean equals(Object obj){
+        if(!(obj instanceof Shape)) return false;
+        Shape o = (Shape)obj;
+        return this.color.equals(o.color);
+    }
+
     public abstract void draw();
 
     public String getColor() {
