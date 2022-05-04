@@ -23,7 +23,7 @@ public class Reader {
     }
 
     public void takeBook(){
-        System.out.println(this.FIO + ", номер билета " + this.number + ", взял книгу");
+        System.out.println(this.getFIO() + ", номер билета " + this.getNumber() + ", взял книгу");
     }
 
     public void takeBook(int amount){
@@ -50,5 +50,41 @@ public class Reader {
         for (String book: books) {
             System.out.print(book+", ");
         }
+    }
+
+    public String getFIO() {
+        return FIO;
+    }
+
+    public void setFIO(String FIO) {
+        this.FIO = FIO;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getFaculty() {
+        return Faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        Faculty = faculty;
+    }
+
+    public String getDoB() {
+        return DoB;
+    }
+
+    public void setDoB(String doB) {
+        DoB = doB;
+    }
+
+    public long getPhone() {
+        return phone;
+    }
+
+    public void setPhone(long phone) {
+        this.phone = phone;
     }
 }
