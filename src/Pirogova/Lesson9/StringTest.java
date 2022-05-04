@@ -4,9 +4,9 @@ public class StringTest {
     public static void main(String[] args) {
         String st1 = "Today is Tuesday";
         //задание 1
-        System.out.println(st1.indexOf('d'));
-        System.out.println(st1.lastIndexOf('d'));
-        System.out.println(st1.substring(2,13));
+//        System.out.println(st1.indexOf('d'));
+//        System.out.println(st1.lastIndexOf('d'));
+        System.out.println(st1.substring(st1.indexOf('d'),st1.lastIndexOf('d')));
         //задание 2
         System.out.println(st1);
         StringBuilder SB = new StringBuilder();
