@@ -40,4 +40,13 @@ public class CommercialVehicle extends Overgorund{
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
+    public void possibility(int load){  //кол-во груза, которое пробуют загрузить
+        if (load>capacity){
+            System.out.println("Вам нужен грузовик побольше");
+        }
+        else {
+            System.out.println("Грузовик загружен");
+        }
+    }
 }
