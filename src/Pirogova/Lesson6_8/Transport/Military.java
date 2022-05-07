@@ -4,9 +4,9 @@ public class Military extends Air{
     private boolean ejectionSystem;//Наличие системы катапультирования
     private int rocket;//Кол-во ракет на борту
 
-    public String Characteristic(){
+    public void Characteristic(){
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
-        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append("тип - военный воздушный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
         sb.append(" л.с., мощность в кВт - ");
         sb.append(this.powerKW());
@@ -23,7 +23,7 @@ public class Military extends Air{
         if (ejectionSystem){sb.append("; есть система катапультирования; количество ракет на борту - ");}
         else {sb.append("; нет системы катапультирования; количество ракет на борту - ");}
         sb.append(this.getRocket());
-        return sb.toString();
+        System.out.println(sb);
     }
 
     public Military() {

@@ -3,9 +3,9 @@ package Pirogova.Lesson6_8.Transport;
 public class CommercialVehicle extends Overgorund{
     private int capacity;//грузоподъемность, тонны
 
-    public String Characteristic(){
+    public void Characteristic(){
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
-        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append("тип - грузовой наземный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
         sb.append(" л.с., мощность в кВт - ");
         sb.append(this.powerKW());
@@ -22,7 +22,7 @@ public class CommercialVehicle extends Overgorund{
         sb.append(" л/100км; грузоподъемность - ");
         sb.append(this.getCapacity());
         sb.append(" тонн.");
-        return sb.toString();
+        System.out.println(sb);
     }
 
     public CommercialVehicle() {

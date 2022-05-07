@@ -4,9 +4,9 @@ public class PassengerVehicle extends Overgorund{
     private String typeOfBody;//тип кузова
     private int passengers;//кол-во пассажиров
 
-    public String Characteristic(){
+    public void Characteristic(){
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
-        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append("тип - легковой наземный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
         sb.append(" л.с., мощность в кВт - ");
         sb.append(this.powerKW());
@@ -24,7 +24,7 @@ public class PassengerVehicle extends Overgorund{
         sb.append(this.getTypeOfBody());
         sb.append("; количество пассажиров - ");
         sb.append(this.getPassengers());
-        return sb.toString();
+        System.out.println(sb);
     }
 
     public PassengerVehicle() {
@@ -65,11 +65,10 @@ public class PassengerVehicle extends Overgorund{
         sb1.append(" км и израсходует ");
         sb1.append(this.fuelCalculation(time));
         sb1.append (" литров топлива");
-        System.out.println(sb1.toString());
+        System.out.println(sb1);
     }
 
-    private int fuelCalculation(int time){
-        int fuel = getFuelFlow()*time*getMaxSpeed();
-        return fuel;
+    private double fuelCalculation(int time){
+        return ((double) getFuelFlow()/100)*time*getMaxSpeed();
     }
 }

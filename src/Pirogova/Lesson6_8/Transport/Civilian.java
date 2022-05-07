@@ -13,9 +13,9 @@ public class Civilian extends Air{
         this.businessCLass = businessCLass;
     }
 
-    public String Characteristic(){
+    public void Characteristic(){
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
-        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append("тип - гражданский воздушный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
         sb.append(" л.с., мощность в кВт - ");
         sb.append(this.powerKW());
@@ -32,8 +32,8 @@ public class Civilian extends Air{
         sb.append(" м; количество пассажиров - ");
         sb.append(this.getPassengers());
         if (businessCLass){sb.append("; есть бизнесс-класс.");}
-        else {sb.append("; без бизнесс-класса");};
-        return sb.toString();
+        else {sb.append("; без бизнесс-класса");}
+        System.out.println(sb);
     }
 
     public int getPassengers() {
