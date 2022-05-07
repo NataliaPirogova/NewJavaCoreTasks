@@ -51,4 +51,25 @@ public class PassengerVehicle extends Overgorund{
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
+
+    public void timeAndFuel(int time){
+        int km = time*getMaxSpeed();
+        StringBuilder sb1 = new StringBuilder("За время ");
+        sb1.append(time);
+        sb1.append(" ч, автомобиль ");
+        sb1.append(this.getBrand());
+        sb1.append(" двигаясь с максимальной скоростью ");
+        sb1.append(this.getMaxSpeed());
+        sb1.append(" км/ч проедет ");
+        sb1.append(km);
+        sb1.append(" км и израсходует ");
+        sb1.append(this.fuelCalculation(time));
+        sb1.append (" литров топлива");
+        System.out.println(sb1.toString());
+    }
+
+    private int fuelCalculation(int time){
+        int fuel = getFuelFlow()*time*getMaxSpeed();
+        return fuel;
+    }
 }
