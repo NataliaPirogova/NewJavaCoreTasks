@@ -13,6 +13,29 @@ public class Civilian extends Air{
         this.businessCLass = businessCLass;
     }
 
+    public String Characteristic(){
+        StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
+        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append(this.getPower());
+        sb.append(" л.с., мощность в кВт - ");
+        sb.append(this.powerKW());
+        sb.append("; максимальная скорость - ");
+        sb.append(this.getMaxSpeed());
+        sb.append(" км/ч; масса - ");
+        sb.append(this.getMass());
+        sb.append(" кг; марка - ");
+        sb.append(this.getBrand());
+        sb.append("; размах крыльев - ");
+        sb.append(this.getWingspan());
+        sb.append(" м; минимальная длина взлётно-посадочной полосы для взлёта - ");
+        sb.append(this.getMinLength());
+        sb.append(" м; количество пассажиров - ");
+        sb.append(this.getPassengers());
+        if (businessCLass){sb.append("; есть бизнесс-класс.");}
+        else {sb.append("; без бизнесс-класса");};
+        return sb.toString();
+    }
+
     public int getPassengers() {
         return passengers;
     }

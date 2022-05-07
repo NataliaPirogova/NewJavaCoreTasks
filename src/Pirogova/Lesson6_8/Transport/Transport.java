@@ -6,6 +6,11 @@ public class Transport {
     private int mass; //кг
     private String brand;//марка
 
+    public double powerKW(){
+        double powerKW=this.power*0.74;
+        return powerKW;
+    }
+
     public Transport() {
     }
 

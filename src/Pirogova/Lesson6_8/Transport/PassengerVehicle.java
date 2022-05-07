@@ -4,6 +4,29 @@ public class PassengerVehicle extends Overgorund{
     private String typeOfBody;//тип кузова
     private int passengers;//кол-во пассажиров
 
+    public String Characteristic(){
+        StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
+        sb.append("тип - легковой; мощность в лошадиных силах - ");
+        sb.append(this.getPower());
+        sb.append(" л.с., мощность в кВт - ");
+        sb.append(this.powerKW());
+        sb.append("; максимальная скорость - ");
+        sb.append(this.getMaxSpeed());
+        sb.append(" км/ч; масса - ");
+        sb.append(this.getMass());
+        sb.append(" кг; марка - ");
+        sb.append(this.getBrand());
+        sb.append("; количество колес - ");
+        sb.append(this.getWheel());
+        sb.append(" расход топлива - ");
+        sb.append(this.getFuelFlow());
+        sb.append(" л/100км; тип кузова - ");
+        sb.append(this.getTypeOfBody());
+        sb.append("; количество пассажиров - ");
+        sb.append(this.getPassengers());
+        return sb.toString();
+    }
+
     public PassengerVehicle() {
     }
 
