@@ -50,4 +50,22 @@ public class Military extends Air{
     public void setRocket(int rocket) {
         this.rocket = rocket;
     }
+
+    public void shot(){ //выстрел
+        if (rocket!=0){
+            System.out.println("Ракета пошла…");
+        }
+        if (rocket==0){
+            System.out.println("Боеприпасы отсутствуют");
+        }
+    }
+
+    public void ejection(){ //катапультирование
+        if (ejectionSystem){
+            System.out.println("Катапультирование прошло успешно");
+        }
+        if (!ejectionSystem){
+            System.out.println("У вас нет такой системы");
+        }
+    }
 }

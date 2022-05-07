@@ -51,4 +51,13 @@ public class Civilian extends Air{
     public void setBusinessCLass(boolean businessCLass) {
         this.businessCLass = businessCLass;
     }
+
+    public void possibility(int load){  //кол-во пассажиров, которое пробуют посадить
+        if (load>passengers){
+            System.out.println("Вам нужен самолет побольше");
+        }
+        else {
+            System.out.println("Все пассажиры посажены");
+        }
+    }
 }
