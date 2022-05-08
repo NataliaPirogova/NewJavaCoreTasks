@@ -8,7 +8,7 @@ public class MyException extends Exception{
     public String toString(){
         StringBuilder SB = new StringBuilder("Число ");
         SB.append(detail);
-        SB.append(" является исключением, т.к. четное");
+        SB.append(" является исключением, т.к. четное. Невозможно завести автомобиль");
         return SB.toString();
     }
 }
