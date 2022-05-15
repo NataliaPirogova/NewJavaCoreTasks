@@ -9,24 +9,32 @@ import java.util.List;
 import java.util.Random;
 
 public class Student {
-private int id=1;
+private int id;
 private String name;
 private int age;
 private String faculty;
 private int course;
 
-public Student(){}
-
 Random r = new Random();
 
-    public Student(String name, String faculty) {
-        this.id = id++;
-        this.name = Fio.get(r.nextInt(21));
-        this.age = r.nextInt(23);
-        this.faculty = faculty;
-        this.course = r.nextInt(6);
+    public Student() {
+        this.id = r.nextInt(1000);
+        this.name = Fio.get(r.nextInt(20));
+        this.age = r.nextInt(17, 23);
+        this.faculty = facult.get(r.nextInt(5));
+        this.course = r.nextInt(1, 6);
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", faculty='" + faculty + '\'' +
+                ", course=" + course +
+                '}';
+    }
 
     List<String> Fio = new ArrayList<>();
 
@@ -45,4 +53,22 @@ Random r = new Random();
         }
     }
 
+
+    List<String> facult = new ArrayList<>();
+
+    BufferedReader bfF;
+
+    {
+        try {
+            bfF = new BufferedReader(new FileReader("D:\\NewJavaCoreTasks\\src\\Pirogova\\Lesson12\\Faculties.txt"));
+            String f;
+            while ((f=bfF.readLine())!=null){
+                facult.add(f);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

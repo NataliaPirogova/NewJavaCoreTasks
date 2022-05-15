@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Faculty {
-    List<String> faculty = new ArrayList<>();
+    List<String> facult = new ArrayList<>();
 
     BufferedReader bfF;
 
@@ -17,7 +17,7 @@ public class Faculty {
             bfF = new BufferedReader(new FileReader("D:\\NewJavaCoreTasks\\src\\Pirogova\\Lesson12\\Faculties.txt"));
             String f;
             while ((f=bfF.readLine())!=null){
-                faculty.add(f);
+                facult.add(f);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -26,8 +26,8 @@ public class Faculty {
         }
     }
 
-//        for (int i = 0; i < faculty.size(); i++) {
-//        System.out.println(faculty.get(i));
+//        for (int i = 0; i < facult.size(); i++) {
+//        System.out.println(facult.get(i));
 //    }
-//        System.out.println(faculty.size());
+//        System.out.println(facult.size());
 }
