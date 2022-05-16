@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Student {
 private int id;
@@ -71,4 +72,35 @@ Random r = new Random();
             e.printStackTrace();
         }
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public int getCourse() {
+        return course;
+    }
+
+    //    public void correct(){
+//        System.out.println("Выберите действие со списком студентов: \n 1 - добавление нового студента в список\n удаление студента из списка по id\n3 - редактирование студента по id\n4 - получить всех студентов в отсортированном виде по имени и возрасту\n5 - получить все уникальные факультеты и имена студентов и их возраст на этомфакультете");
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        switch (a){
+//            case 1:
+//                students.add
+//        }
+//
+//    }
 }
