@@ -1,7 +1,7 @@
 package Pirogova.Lesson14.Lesson;
 
-import java.util.List;
-import java.util.Random;
+import javax.crypto.spec.PSource;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,34 +16,64 @@ public class Main {
         People people2 = new People("Klim", 19, Gender.MALE, List.of(hobby1));
         People people3 = new People("Victor", 35, Gender.MALE, List.of(hobby1, hobby3));
         People people4 = new People("Artyom", 23, Gender.MALE, List.of(hobby3, hobby2));
-        People people5 = new People("Nastia", 20, Gender.FEMALE, List.of(hobby1, hobby2, hobby3));
+        People people5 = new People("Nastia", 22, Gender.FEMALE, List.of(hobby1, hobby2, hobby3));
 
         List<People> peoples = List.of(people1,people2,people3,people4, people5);
 
         double average = peoples.stream().mapToInt(People::getAge).average().orElse(0);
 
-        //System.out.println(average);
+//        //System.out.println(average);
+//
+//        //Task2
+//        List<People> malePeople = peoples.stream().filter(people -> people.getGender() == Gender.MALE).toList();
+//        //System.out.println(malePeople);
+//
+//        //Task3^^
+//        List<People> hobPeople = peoples.stream()
+//                .filter(people -> people.getHobbies().stream()
+//                        .anyMatch(hobby -> hobby.getName().equals("IT"))) //anyMatch - проверяет на совпадения, что хотябы одно значение из потока соответсвует ищ щеачме
+//                .toList();
+//        //System.out.println(hobPeople);
+//
+//        //Task4
+//        List<People> hobPeopleAv = peoples.stream()
+//                .filter(people -> people.getHobbies().size()>=2)
+//                .filter(p -> p.getHobbies().stream()
+//                        .filter(hobby -> hobby.getMark()>1).peek(System.out::println).toList().size()>=2) //anyMatch - проверяет на совпадения, что хотябы одно значение из потока соответсвует ищ щеачме
+//                .toList();
+//
+//        //System.out.println(hobPeopleAv);
+//
+//        //Task5
+//        peoples.stream().filter(p -> Birthday.is(p.getAge())).forEach(System.out::println);
+//
+//        //Task6
+//        peoples.stream()
+//                .filter(p->{
+//                    String nameLower = p.getName().toLowerCase();
+//                    return nameLower.contains("a")&&!nameLower.contains("b");
+//                })
+//                .forEach(System.out::println);
 
-        //Task2
-        List<People> malePeople = peoples.stream().filter(people -> people.getGender() == Gender.MALE).toList();
-        //System.out.println(malePeople);
+       // peoples.stream().sorted(new ComparatorMy().reversed()).forEach(System.out::println);
 
-        //Task3^^
-        List<People> hobPeople = peoples.stream()
-                .filter(people -> people.getHobbies().stream()
-                        .anyMatch(hobby -> hobby.getName().equals("IT"))) //anyMatch - проверяет на совпадения, что хотябы одно значение из потока соответсвует ищ щеачме
-                .toList();
-        //System.out.println(hobPeople);
+       // peoples.stream().sorted(new ComparingHobby()).forEach(System.out::println);
 
-        //Task4
-        List<People> hobPeopleAv = peoples.stream()
-                .filter(people -> people.getHobbies().size()>=2)
-                .filter(p -> p.getHobbies().stream()
-                        .filter(hobby -> hobby.getMark()>1).peek(System.out::println).toList().size()>=2) //anyMatch - проверяет на совпадения, что хотябы одно значение из потока соответсвует ищ щеачме
-                .toList();
+//       System.out.println(peoples.stream()
+//                .sorted(Comparator.comparingInt(People::getAge).reversed().thenComparing(new ComparingHobby()))
+//                .findFirst().orElse(new People()));
 
-        //System.out.println(hobPeopleAv);
+        String st = "Hello";
+//        char[] mass = st.toCharArray();
+//        Arrays.asList();
+      //  st.chars().map(p->(char)p).peek(System.out::println).forEach(System.out::println);
+                //.collect(Collectors.toMap(ch->ch,ch->1,Integer::sum));
 
-        //Task5
+        Stream.of(st.toCharArray()).collect(Collectors.groupingBy(ch->ch,Collectors.counting()));
+
+
+        int a = 72;
+        char c = (char) a;
+        System.out.println(c);
     }
 }

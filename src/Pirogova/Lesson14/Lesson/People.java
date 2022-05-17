@@ -8,6 +8,9 @@ public class People {
     private Gender gender;
     private List<Hobby> hobbies;
 
+    public People() {
+    }
+
     public People(String name, int age, Gender gender, List<Hobby> hobbies) {
         this.name = name;
         this.age = age;
