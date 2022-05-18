@@ -1,5 +1,7 @@
 package Pirogova.Lesson12.Task2;
 
+import java.util.List;
+
 public class Student {
     private String name;
     private int group;
@@ -46,5 +48,19 @@ public class Student {
 
     public void setMark(double mark) {
         this.mark = mark;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", group=" + group +
+                ", course=" + course +
+                ", mark=" + mark +
+                '}';
+    }
+
+    public String printStudents(List<Student> students, int course){
+        return "Студент"+name+", курс "+course;
     }
 }
