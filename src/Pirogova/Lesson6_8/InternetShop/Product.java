@@ -5,7 +5,7 @@ public class Product {
     private int price;
     private int rank;//рейтинг
 
-    public Product(){};
+    public Product(){}
 
     public Product(String name, int price, int rank){
         this.name = name;
