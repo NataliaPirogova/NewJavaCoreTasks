@@ -5,6 +5,13 @@ public class Product {
     private int price;
     private int rank;//рейтинг
 
+    public Product(){};
+
+    public Product(String name, int price, int rank){
+        this.name = name;
+        this.price = price;
+        this.rank = rank;
+    }
     public String getName() {
         return name;
     }

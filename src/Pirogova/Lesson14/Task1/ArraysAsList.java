@@ -27,5 +27,7 @@ public class ArraysAsList {
 
 //        origin.stream().skip(1).limit(2).forEach(System.out::println);
 
+
+
     }
 }
