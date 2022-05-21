@@ -1,0 +1,36 @@
+package Pirogova.Lesson14.Task2;
+
+public class People {
+    private String name;
+    private int age;
+    private Sex sex;
+
+    public People() {
+    }
+
+    public People(String name, int age, Sex sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+}
