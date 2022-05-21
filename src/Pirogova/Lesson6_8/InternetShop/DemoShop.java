@@ -7,20 +7,20 @@ public class DemoShop {
 //        Category food = new Category("Food");
 //        Category school = new Category("School");
 
-        Printable tomSoyer = new Book("Том Сойер");
-        Printable chemicalTest = new Book("Тесты по химии");
-        Magazine cosmo = new Magazine("Космополитан");
-        Printable[] booksAndMagazines = new Printable[]{tomSoyer,chemicalTest,cosmo};
-
-        for (Printable item:booksAndMagazines) {
-        item.print();
+//        Printable tomSoyer = new Book("Том Сойер");
+//        Printable chemicalTest = new Book("Тесты по химии");
+//        Magazine cosmo = new Magazine("Космополитан");
+//        Printable[] booksAndMagazines = new Printable[]{tomSoyer,chemicalTest,cosmo};
+//
+//        for (Printable item:booksAndMagazines) {
+//        item.print();
 //        if (item instanceof Magazine){
 //            Magazine.printMagazines(booksAndMagazines);
 //        }
 //        if(item instanceof Book){
 //            Book.printBooks(booksAndMagazines);
 //        }
-        }
+//        }
 //
 //        Instrument guitar1 = new Guitar(7);
 //        Instrument drum1 = new Drum(2);
@@ -38,5 +38,15 @@ public class DemoShop {
 //             Season.values()) {
 //            System.out.println(s+", средняя температура "+s.getAverageT()+", "+s.getDescription());
 //        }
+
+        Clothes t_shirt1 = new Tshirt(Sizes.XXS, 70, "White");
+        Clothes skirt1 = new Skirt(Sizes.S, 99, "Marsala");
+        Clothes tie1 = new Tie(Sizes.L, 65, "Black");
+        Clothes pants1 = new Pants(Sizes.M,120, "Blue");
+        Clothes[] clothes = new Clothes[]{t_shirt1, skirt1, tie1, pants1};
+        for (Clothes c:
+             clothes) {
+            System.out.println(c);
+        }
     }
 }
