@@ -6,30 +6,22 @@ public class CarTest {
         Car Car2 = new Car("BMW", 250, 63000);
         Car Car3 = new Car("Reno", 150, 23000);
 
-        try{
+        try {
             Car1.start();
+        } catch (MyException e) {
+            System.err.println(e);
         }
-        catch (MyException e){
-            StringBuilder StrB = new StringBuilder("caught ");
-            StrB.append(e);
-            System.out.println(StrB);
-        }
-        try{
+
+        try {
             Car2.start();
+        } catch (MyException e) {
+            System.err.println(e);
+        }
+
+        try {
             Car3.start();
-        }
-        catch (MyException e){
-            StringBuilder StrB = new StringBuilder("caught ");
-            StrB.append(e);
-            System.out.println(StrB);
-        }
-        try{
-            Car3.start();
-        }
-        catch (MyException e){
-            StringBuilder StrB = new StringBuilder("caught ");
-            StrB.append(e);
-            System.out.println(StrB);
+        } catch (MyException e) {
+            System.err.println(e);
         }
     }
 }
