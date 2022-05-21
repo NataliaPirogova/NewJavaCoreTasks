@@ -5,4 +5,8 @@ public class Basket {
 
     public Basket() {
     }
+
+    public Basket(Product[] boughtProducts) {
+        this.boughtProducts = boughtProducts;
+    }
 }

@@ -12,7 +12,7 @@ public class Guitar implements Instrument{
 
     @Override
     public void play() {
-        System.out.println("Играет гитара, с количеством струн - "+quantityStrings);
+        System.out.println("Играет гитара, с количеством струн - "+quantityStrings+", "+Instrument.KEY);
 
     }
 }

@@ -30,4 +30,10 @@ public class Book implements Printable{
                 "название='" + name + '\'' +
                 '}';
     }
+    public static void printBooks(Printable[]printable){
+        for (Printable p:
+                printable) {
+            System.out.println(((Book) p).getName());
+        }
+    }
 }

@@ -32,9 +32,7 @@ public class Magazine implements Printable{
     public static void printMagazines (Printable[]printable){
         for (Printable p:
              printable) {
-            if(p instanceof Magazine){
                 System.out.println(((Magazine) p).getName());
-            }
         }
     }
 }
