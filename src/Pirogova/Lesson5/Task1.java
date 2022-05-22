@@ -15,11 +15,8 @@ public class Task1 {
             c+=2;
         }
         System.out.println();
-        int d = 2;
         for (int i = 0; i < count; i++) {
-            a[i] = d;
-            System.out.println(a[i] + " ");
-            d+=2;
+            System.out.println(a[i]);
         }
 
     }
