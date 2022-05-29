@@ -2,17 +2,16 @@ package Pirogova.Lesson15_Reg;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Stream;
 
 public class RegexDemo
     {
         public static void main(String[] args) {
             //* дата с високосным годом 2000-02-29 валидная, а вот эта 2001-02-29 невалидная
-            String date = "2001-02-29";
-            Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
+            String date = "2001-2-29";
+            Pattern pattern = Pattern.compile("([0-2][0-9]{3})-(0[0-9]|1[0-2])-\\d{2}");
             Matcher m = pattern.matcher(date);
             while (m.find()){
-                // System.out.println(m.matches());
+                System.out.println(m.matches());
 
                 Pattern p29 = Pattern.compile("\\d{4}-02-29");
                 Matcher m29 = p29.matcher(date);
