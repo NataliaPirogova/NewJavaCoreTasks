@@ -1,7 +1,7 @@
 package Pirogova.Lesson17_Conurrency;
 
 public class NewThreadT3 extends Thread{
-    StringBuilder sym;
+    final StringBuilder sym;
 
     public NewThreadT3(String name, StringBuilder sym) {
         super(name);
@@ -14,6 +14,7 @@ public class NewThreadT3 extends Thread{
             for (int i = 1; i <= 100; i++) {
                 System.out.println(sym+" "+Thread.currentThread().getName());
             }
+            sym.append(sym);
         }
     }
 }
