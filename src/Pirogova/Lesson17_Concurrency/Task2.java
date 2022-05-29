@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 //2. Создать класс реализующий Runnable
 //    Создать класс, реализующий интерфейс Runnable.
 //    Переопределить run() метод. Создать цикл for. В цикле распечатываем значения от 0 до 100 делящиеся на 10 без остатка.

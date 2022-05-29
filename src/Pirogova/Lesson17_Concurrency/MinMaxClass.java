@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 
 public class MinMaxClass extends Thread {
     public int num; //количество чисел в массиве

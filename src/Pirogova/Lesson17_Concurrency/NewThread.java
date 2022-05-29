@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 
 public class NewThread extends Thread{
     public NewThread(String name) {

@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 //    1. Создать класс расширяющий Thread
 //    Создать класс NewThread расширяющий Thread.
 //    Переопределить метод run(). В цикле for вывести на консоль символ 100 раз.

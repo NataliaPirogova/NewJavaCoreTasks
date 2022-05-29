@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 
 public class NewThreadT3 extends Thread{
     final StringBuilder sym;
