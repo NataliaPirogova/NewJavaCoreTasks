@@ -22,7 +22,10 @@ public class Task4 {
             mass[i] = sc.nextInt();
         }
 
-        MinMaxClass m1 = new MinMaxClass("MaxFind", num);
-        m1.start();
+        //для двух классов
+        MaxClass maximum = new MaxClass("MAX", mass);
+        MinClass minimum = new MinClass("MIN", mass);
+        maximum.start();
+        minimum.start();
     }
 }
