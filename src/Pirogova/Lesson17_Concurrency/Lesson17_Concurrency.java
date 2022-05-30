@@ -1,4 +1,4 @@
-package Pirogova.Lesson17_Conurrency;
+package Pirogova.Lesson17_Concurrency;
 
 public class Lesson17_Concurrency {
 //    1. Создать класс расширяющий Thread
