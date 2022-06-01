@@ -5,9 +5,8 @@ public class Test {
         Restaurant restaurant1 = new Restaurant(2);
 
         for (int i = 0; i < 100; i++) {
-        Thread thread1 = new Thread(new Guest(restaurant1));
-        thread1.start();
-
+            Thread thread1 = new Thread(new Guest(restaurant1));
+            thread1.start();
         }
 
         for (int i = 0; i < 5; i++) {
