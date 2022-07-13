@@ -13,10 +13,10 @@ public class Task6_Scanner {
         System.out.println("Введите второе число: ");
         int b = scanner.nextInt();
 
-        int value1 = random.nextInt((b-a) + a);
-        int value2 = random.nextInt(a,b);
+        int value1 = random.nextInt((b - a) + a);
+        int value2 = random.nextInt(a, b);
 
-        int maxValue = value1>value2?value1:value2;
+        int maxValue = value1 > value2 ? value1 : value2;
 
         System.out.println("Первое число " + value1);
         System.out.println("Второе число " + value2);
