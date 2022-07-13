@@ -5,10 +5,9 @@ public class Task2 {
         int a = 8;
         int b = 8;
         int c = 8;
-        if(a+b<c || a+c<b || b+c<a){
+        if (a + b < c || a + c < b || b + c < a) {
             System.out.println("Треугольник не существует");
-        }
-        else{
+        } else {
             System.out.println("Треугольник существует");
         }
     }
