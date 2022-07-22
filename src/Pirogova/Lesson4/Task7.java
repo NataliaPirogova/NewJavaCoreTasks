@@ -2,11 +2,11 @@ package Pirogova.Lesson4;
 
 public class Task7 {
     public static void main(String[] args) {
-        int a=0;
-        int s=0;//сумма
-        while(a<100){
+        int a = 0;
+        int s = 0;//сумма
+        while (a < 100) {
             a++;
-            if(a%2 == 0){
+            if (a % 2 == 0) {
                 continue;
             }
             s = s + a;
