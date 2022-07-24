@@ -3,7 +3,7 @@ package Pirogova.Lesson6_8.Phone;
 public class Phone_examples {
     public static void main(String[] args) {
         Phone Phone1 = new Phone(911, "SOS", 432);
-        Phone Phone2 = new Phone(6772112,"Siemenes", 124);
+        Phone Phone2 = new Phone(6772112, "Siemenes", 124);
         Phone Phone3 = new Phone(1341444, "Honor", 99);
 
         Phone1.displayInfo();
@@ -15,6 +15,6 @@ public class Phone_examples {
         Phone3.displayInfo();
         Phone3.receiveCall("Oleg", 1723113);
         Phone3.getNumber();
-        Phone1.sendMessage(911, 102,103);
+        Phone1.sendMessage(911, 102, 103);
     }
 }

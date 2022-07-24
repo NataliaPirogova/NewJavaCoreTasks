@@ -1,19 +1,27 @@
 package Pirogova.Lesson6_8;
 
-import java.util.Scanner;
-import java.lang.StringBuilder;
-
 public class AB {
+    public static String recursion(int a, int b) {
+        // основное условие задачи
+        if (a > b) {
+            // Базовый случай
+            if (a == b) {
+                return Integer.toString(a);
+            }
+            // Шаг рекурсии / рекурсивное условие
+            return a + " " + recursion(a - 1, b);
+        } else {
+            // Базовый случай
+            if (a == b) {
+                return Integer.toString(a);
+            }
+            // Шаг рекурсии / рекурсивное условие
+            return a + " " + recursion(a + 1, b);
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число A:");
-        int a = sc.nextInt();
-        StringBuilder sb = new StringBuilder("Число А равно ");
-        sb.append(a);
-        System.out.println("Введите число B: ");
-        int b=sc.nextInt();
-        sb.append(". Число B равно ");
-        sb.append(b);
-        System.out.println(sb);
+        System.out.println(recursion(20, 15)); // вызов рекурсивной функции
+        System.out.println(recursion(10, 15)); // вызов рекурсивной функции
     }
 }

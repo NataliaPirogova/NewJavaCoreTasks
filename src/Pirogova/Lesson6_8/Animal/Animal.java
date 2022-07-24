@@ -1,28 +1,28 @@
 package Pirogova.Lesson6_8.Animal;
 
 public class Animal {
-private String food;
-private String location;
+    private String food;
+    private String location;
 
-public Animal(){
-}
+    public Animal() {
+    }
 
-public Animal(String food, String location){
-    this.food=food;
-    this.location=location;
-}
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location = location;
+    }
 
-public void makeNoise(){
-    System.out.println("Такое-то животное производит звук");
-}
+    public void makeNoise() {
+        System.out.println("Такое-то животное производит звук");
+    }
 
-public void eat(){
-    System.out.println("Такое-то животное ест");
-}
+    public void eat() {
+        System.out.println("Такое-то животное ест");
+    }
 
-public void sleep(){
-    System.out.println("Такое-то животное спит");
-}
+    public void sleep() {
+        System.out.println("Такое-то животное спит");
+    }
 
     public String getFood() {
         return food;

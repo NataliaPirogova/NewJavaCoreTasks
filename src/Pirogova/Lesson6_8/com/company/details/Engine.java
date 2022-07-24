@@ -4,7 +4,7 @@ public class Engine {
     private int power;//мощность
     private int capacity;//производительность
 
-    public Engine(){
+    public Engine() {
     }
 
     public Engine(int power, int capacity) {

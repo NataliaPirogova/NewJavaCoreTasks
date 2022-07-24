@@ -3,14 +3,16 @@ package Pirogova.Lesson6_8.Shape;
 public abstract class Shape {
     private String color;
 
-    public Shape(){};
-    public Shape(String color) {
-        this.color=color;
+    public Shape() {
     }
 
-    public boolean equals(Object obj){
-        if(!(obj instanceof Shape)) return false;
-        Shape o = (Shape)obj;
+    public Shape(String color) {
+        this.color = color;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Shape)) return false;
+        Shape o = (Shape) obj;
         return this.color.equals(o.color);
     }
 

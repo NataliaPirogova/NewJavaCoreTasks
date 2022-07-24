@@ -13,7 +13,7 @@ public class All {
         students[2] = new Student("Kirill", "Teterev", "group21", 3.9);
         students[3] = S1;
 
-        for (Student student: students) {
+        for (Student student : students) {
             student.getScholarship();
         }
     }

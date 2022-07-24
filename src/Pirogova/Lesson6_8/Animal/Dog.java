@@ -4,26 +4,26 @@ public class Dog extends Animal {
 
     private String breed;//порода
 
-    public Dog(){
+    public Dog() {
     }
 
-    public Dog(String food, String location, String breed){
+    public Dog(String food, String location, String breed) {
         super(food, location);
-        this.breed=breed;
+        this.breed = breed;
     }
 
     @Override
-    public void makeNoise(){
+    public void makeNoise() {
         System.out.println("Собака гавкает");
     }
 
     @Override
-    public void eat(){
+    public void eat() {
         System.out.println("Собака ест");
     }
 
     @Override
-    public void sleep(){
+    public void sleep() {
         System.out.println("Собака спит");
     }
 
@@ -33,5 +33,12 @@ public class Dog extends Animal {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "breed='" + breed + '\'' +
+                '}';
     }
 }

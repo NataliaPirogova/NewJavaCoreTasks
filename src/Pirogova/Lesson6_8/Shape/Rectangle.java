@@ -1,31 +1,34 @@
 package Pirogova.Lesson6_8.Shape;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private int a;
     private int b;
     private int c;
     private int d;
 
-    public Rectangle(){};
+    public Rectangle() {
+    }
 
-    public Rectangle(String color, int a, int b, int c, int d){
+    public Rectangle(String color, int a, int b, int c, int d) {
         super(color);
-        this.a=a;
-        this.b=b;
-        this.c=c;
-        this.d=d;
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
     }
 
     @Override
-    public boolean equals(Object obj){
-        if(!(obj instanceof Rectangle)) return false;
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Rectangle)) return false;
         Rectangle o = (Rectangle) obj;
-        return (this.a==o.a && this.b==o.b && this.c==o.c && this.d==o.d);
-    };
+        return (this.a == o.a && this.b == o.b && this.c == o.c && this.d == o.d);
+    }
+
+    ;
 
     @Override
     public void draw() {
-        System.out.println("Цвет: "+this.getColor()+",  координаты: "+a+", "+b+", "+c+", "+d);
+        System.out.println("Цвет: " + this.getColor() + ",  координаты: " + a + ", " + b + ", " + c + ", " + d);
     }
 
     public int getA() {

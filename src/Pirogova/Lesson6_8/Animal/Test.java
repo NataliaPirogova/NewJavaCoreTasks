@@ -7,16 +7,16 @@ public class Test {
         Animal Tilda = new Cat("Любит крольчатину", "домашняя", "британская порода");
         Animal Margo = new Horse("Любит морковь", "содержится на ферме", "степной вид", "легкоупряжная");
         Animal West = new Horse("Любит сено", "содержится на конюшне", "степной вид", "верховая");
-        Animal Poncho = new Dog("Любит мясо", "домашний","пудель");
+        Animal Poncho = new Dog("Любит мясо", "домашний", "пудель");
         Animal[] patients = new Animal[5];
-        patients[0]=Jack;
-        patients[1]=Tilda;
-        patients[2]=Margo;
-        patients[3]=West;
-        patients[4]=Poncho;
+        patients[0] = Jack;
+        patients[1] = Tilda;
+        patients[2] = Margo;
+        patients[3] = West;
+        patients[4] = Poncho;
 
-        for (Animal patient: patients
-             ) {
+        for (Animal patient : patients
+        ) {
             Polina.treatAnimal(patient);
         }
     }

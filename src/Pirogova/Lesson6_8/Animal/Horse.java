@@ -1,31 +1,31 @@
 package Pirogova.Lesson6_8.Animal;
 
-public class Horse extends Animal{
+public class Horse extends Animal {
 
     private String climate;//Зонально-климатический признак:— лесные,— горные,— степные
     private String mission;//Назначение: верховые, верхово-упряжные, легкоупряжные, тяжелоупряжные, верхово-вьючные
 
-    public Horse(){
+    public Horse() {
     }
 
-    public Horse(String food, String location, String climate, String mission){
+    public Horse(String food, String location, String climate, String mission) {
         super(food, location);
-        this.climate=climate;
-        this.mission=mission;
+        this.climate = climate;
+        this.mission = mission;
     }
 
     @Override
-    public void makeNoise(){
+    public void makeNoise() {
         System.out.println("Лошадь ржет");
     }
 
     @Override
-    public void eat(){
+    public void eat() {
         System.out.println("Лошадь ест");
     }
 
     @Override
-    public void sleep(){
+    public void sleep() {
         System.out.println("Лошадь спит");
     }
 
@@ -43,5 +43,13 @@ public class Horse extends Animal{
 
     public void setMission(String mission) {
         this.mission = mission;
+    }
+
+    @Override
+    public String toString() {
+        return "Horse{" +
+                "climate='" + climate + '\'' +
+                ", mission='" + mission + '\'' +
+                '}';
     }
 }

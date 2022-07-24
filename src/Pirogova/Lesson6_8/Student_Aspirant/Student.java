@@ -6,9 +6,10 @@ public class Student {
     private String group;
     double averageMark;
 
-    public Student(){
+    public Student() {
 
     }
+
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,16 +17,15 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public void getScholarship(){
-        if(averageMark==5){
+    public void getScholarship() {
+        if (averageMark == 5) {
             System.out.println("Сумма стипендии " + firstName + lastName + " равна 100 р");
-        }
-        else{
+        } else {
             System.out.println("Сумма стипендии " + firstName + lastName + " равна 80 р");
         }
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return firstName;
     }
 

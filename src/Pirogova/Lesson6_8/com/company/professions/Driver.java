@@ -6,7 +6,7 @@ public class Driver extends Person {
     private String FIO;
     private int experience;//стаж вождения
 
-    public Driver(){
+    public Driver() {
     }
 
     public Driver(String fullName, int age, String FIO, int experience) {

@@ -15,7 +15,7 @@ public class Lorry extends Car {
     }
 
     @Override
-    public void printInfo(){
-        System.out.println("Марка авто "+this.getType()+", класс авто "+this.getGrade()+", вес авто "+this.getWeight()+", "+this.getDriver()+", "+this.getEngine()+", грузоподъемность "+carrying);
+    public void printInfo() {
+        System.out.println("Марка авто " + this.getType() + ", класс авто " + this.getGrade() + ", вес авто " + this.getWeight() + ", " + this.getDriver() + ", " + this.getEngine() + ", грузоподъемность " + carrying);
     }
 }
