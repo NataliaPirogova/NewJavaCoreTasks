@@ -20,12 +20,12 @@ public class Matrix4 {
         }
         System.out.println();
         int summ = 0;
-        for (int i = 0; i < mass.length-1; i++) {
-            for (int j = mass.length-2-i; j >= 0; j--) {
-            summ+=mass[i][j];
-            break;
+        for (int i = 0; i < mass.length - 1; i++) {
+            int j = mass.length - 2 - i;
+            if (mass[i][j] % 2 == 0) {
+                summ += mass[i][j];
             }
         }
-        System.out.println("Сумма элементов над побочной диагональю: " + summ);
+        System.out.println("Сумма четных элементов над побочной диагональю: " + summ);
     }
 }

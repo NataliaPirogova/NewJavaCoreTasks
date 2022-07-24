@@ -16,8 +16,8 @@ public class Matrix1 {
             for (int j = 0; j < n; j++) {
                 mass[i][j] = r.nextInt(50);
                 System.out.print(mass[i][j] + " ");
-                if (i==j && mass[i][j]%2 == 0){
-                    sum+=mass[i][j];
+                if (i == j && mass[i][j] % 2 == 0) {
+                    sum += mass[i][j];
                 }
             }
             System.out.println();

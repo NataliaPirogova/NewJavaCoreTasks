@@ -15,10 +15,13 @@ public class Extra7 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите значение, которое будем искать в массиве:");
         int value = sc.nextInt();
+        int count = 0;
         for (int i = 0; i < mass.length; i++) {
-            if(mass[i]==value){
+            if (mass[i] == value) {
+                count++;
                 System.out.println("Значение " + value + " находится в массиве под индексом " + i);
             }
         }
+        System.out.println("Всего встречается в массиве раз: " + count);
     }
 }

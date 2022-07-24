@@ -10,10 +10,9 @@ public class Task9 {
         int size = sc.nextInt();
 //        int s_left = 0;
 //        int s_right = 0;
-        if(size<=0){
+        if (size <= 0) {
             System.out.println("Неподходящее значение!");
-        }
-        else {
+        } else {
             System.out.println("Размер массива: " + size);
             int[] a = new int[size];
             Random r = new Random();
@@ -22,16 +21,17 @@ public class Task9 {
                 System.out.print(a[i] + " ");
             }
             System.out.println();
-            int summ=0;
-            for (int i = 0; i < (size/2); i++) {
-                summ=summ+a[size-1-i]-a[i];
+            int summ = 0;
+            for (int i = 0; i < (size / 2); i++) {
+                summ = summ + a[size - 1 - i] - a[i];
             }
-            if(summ<0){
+            if (summ < 0) {
                 System.out.println("Сумма левой половины больше");
-            }else if(summ>0){
+            } else if (summ > 0) {
                 System.out.println("Сумма правой половины больше");
-            }else{
-                System.out.println("Обе половины равны");}
+            } else {
+                System.out.println("Обе половины равны");
+            }
 
             //            for (int i = 0; i <(size/2) ; i++) {
 //                s_left = s_left + a[i];

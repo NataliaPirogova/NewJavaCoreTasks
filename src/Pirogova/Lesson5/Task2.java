@@ -34,7 +34,7 @@ public class Task2 {
         }
         System.out.println(count1);
 
-        for (int i = mass2.length-1; i >= 0; i--) {
+        for (int i = mass2.length - 1; i >= 0; i--) {
             System.out.println(mass2[i]);
         }
     }

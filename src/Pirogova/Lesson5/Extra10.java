@@ -13,15 +13,15 @@ public class Extra10 {
         System.out.println();
         int max = mass[0];
         for (int i = 0; i < mass.length; i++) {
-            if(mass[i]>max){
+            if (mass[i] > max) {
                 max = mass[i];
             }
         }
         System.out.println("Максимальный элемент: " + max);
         int value = mass[0];
         for (int i = 0; i < mass.length; i++) {
-            if(mass[i]==max){
-                mass[i]=value;
+            if (mass[i] == max) {
+                mass[i] = value;
             }
             mass[0] = max;
             System.out.print(mass[i] + " ");

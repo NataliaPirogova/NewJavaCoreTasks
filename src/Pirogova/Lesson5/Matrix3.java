@@ -22,15 +22,14 @@ public class Matrix3 {
         int pr1 = 1; //произведение главной диагонали
         int pr2 = 1; //произведение побочной диагонали
         for (int i = 0; i < n; i++) {
-            int j = i;
-            pr1*=mass[i][j];            
+            pr1*=mass[i][i];
         }
         for (int i = mass.length-1; i >= 0; i--) {
-            for(int j = mass.length-1-i; j < mass.length; j++){
+            int j = mass.length-1-i;
                 pr2*=mass[i][j];
-            }
         }
-        int otn = pr1/pr2;
+        double otn = (double) pr1/pr2;
+
         if (otn > 1) {
             System.out.println("Произведение главной диагонали больше");
         }

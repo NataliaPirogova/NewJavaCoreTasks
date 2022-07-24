@@ -14,9 +14,9 @@ public class Extra6 {
         for (int i = 0; i < mass.length; i++) {
             int value = mass[i];
             int j = i;
-            while(j < mass.length-1){
+            while (j < mass.length - 1) {
                 j++;
-                if(value == mass[j]){
+                if (value == mass[j]) {
                     System.out.println("Есть повторяющиеся значения: " + value);
                     break;
                 }

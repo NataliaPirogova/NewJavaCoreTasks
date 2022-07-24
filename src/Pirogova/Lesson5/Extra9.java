@@ -11,9 +11,10 @@ public class Extra9 {
             System.out.print(mass[i] + " ");
         }
         System.out.println();
+
         int min = mass[0];
-        for (int i = 0; i < mass.length; i=i+2) {
-            if(mass[i]<min){
+        for (int i = 0; i < mass.length; i = i + 2) {
+            if (mass[i] < min) {
                 min = mass[i];
             }
         }

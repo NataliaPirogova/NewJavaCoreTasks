@@ -21,7 +21,7 @@ public class Matrix5 {
         System.out.println();
         int value;
         for (int i = 0; i < mass.length; i++) {
-            for (int j = i+1; j < mass.length; j++) {
+            for (int j = i + 1; j < mass.length; j++) {
                 value = mass[i][j];
                 mass[i][j] = mass[j][i];
                 mass[j][i] = value;

@@ -22,16 +22,15 @@ public class Extra3 {
         int sum = 0;
         double average;
         for (int i = 0; i < n; i++) {
-           if(mass[i]>C){
-               count++;
-               sum+=mass[i];
-           }
+            if (mass[i] > C) {
+                count++;
+                sum += mass[i];
+            }
         }
-        average = (double) sum/count;
-        if(sum==0){
+        average = (double) sum / count;
+        if (sum == 0) {
             System.out.println("В массиве нет чисел больше " + C);
-        }else
-        {
+        } else {
             System.out.println("Среднее арифметическое чисел, которые больше " + C + " равно: " + average);
         }
     }

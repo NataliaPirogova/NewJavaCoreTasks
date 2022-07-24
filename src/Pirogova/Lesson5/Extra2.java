@@ -12,13 +12,13 @@ public class Extra2 {
         for (int i = 0; i < mass.length; i++) {
             mass[i] = r.nextInt(10);
             System.out.print(mass[i] + " ");
-            if(i%2!=0){
+            if (i % 2 != 0) {
                 count++;
-                sum+=mass[i];
+                sum += mass[i];
             }
         }
         System.out.println();
-        average = (double) sum/count;
+        average = (double) sum / count;
         System.out.println("Среднее арифметическое нечетных элементов: " + average);
     }
 }

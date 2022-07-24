@@ -13,7 +13,7 @@ public class Extra5 {
         System.out.println();
         int count = 0;
         for (int i = 0; i < mass.length; i++) {
-            if(i%2 == 0){
+            if (i % 2 == 0) {
                 System.out.print(mass[i] + " ");
                 count++;
             }

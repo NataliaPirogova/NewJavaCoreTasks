@@ -13,8 +13,8 @@ public class Extra4 {
         }
         System.out.println();
         int min = mass[1];
-        for (int i = 1; i < n; i=i+2) {
-            if(mass[i]<min){
+        for (int i = 1; i < n; i = i + 2) {
+            if (mass[i] < min) {
                 min = mass[i];
             }
         }
