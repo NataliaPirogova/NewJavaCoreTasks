@@ -1,6 +1,6 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class Air extends Transport{
+public class Air extends Transport {
     private int wingspan;//размах крыльев
     private int minLength;//Минимальная длина взлётно-посадочной полосы для взлёта
 

@@ -1,13 +1,13 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class Overgorund extends Transport{
+public class Overground extends Transport {
     private int wheel;//количество колес
     private int fuelFlow;//расход топлива л/100 км
 
-    public Overgorund() {
+    public Overground() {
     }
 
-    public Overgorund(int power, int maxSpeed, int mass, String brand, int wheel, int fuelFlow) {
+    public Overground(int power, int maxSpeed, int mass, String brand, int wheel, int fuelFlow) {
         super(power, maxSpeed, mass, brand);
         this.wheel = wheel;
         this.fuelFlow = fuelFlow;

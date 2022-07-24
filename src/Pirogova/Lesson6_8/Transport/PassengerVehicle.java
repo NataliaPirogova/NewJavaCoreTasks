@@ -1,10 +1,10 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class PassengerVehicle extends Overgorund{
+public class PassengerVehicle extends Overground {
     private String typeOfBody;//тип кузова
     private int passengers;//кол-во пассажиров
 
-    public void Characteristic(){
+    public void Characteristic() {
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
         sb.append("тип - легковой наземный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
@@ -52,8 +52,8 @@ public class PassengerVehicle extends Overgorund{
         this.passengers = passengers;
     }
 
-    public void timeAndFuel(int time){
-        int km = time*getMaxSpeed();
+    public void timeAndFuel(int time) {
+        int km = time * getMaxSpeed();
         StringBuilder sb1 = new StringBuilder("За время ");
         sb1.append(time);
         sb1.append(" ч, автомобиль ");
@@ -64,11 +64,11 @@ public class PassengerVehicle extends Overgorund{
         sb1.append(km);
         sb1.append(" км и израсходует ");
         sb1.append(this.fuelCalculation(time));
-        sb1.append (" литров топлива");
+        sb1.append(" литров топлива");
         System.out.println(sb1);
     }
 
-    private double fuelCalculation(int time){
-        return ((double) getFuelFlow()/100)*time*getMaxSpeed();
+    private double fuelCalculation(int time) {
+        return ((double) getFuelFlow() / 100) * time * getMaxSpeed();
     }
 }

@@ -1,10 +1,10 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class Military extends Air{
+public class Military extends Air {
     private boolean ejectionSystem;//Наличие системы катапультирования
     private int rocket;//Кол-во ракет на борту
 
-    public void Characteristic(){
+    public void Characteristic() {
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
         sb.append("тип - военный воздушный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
@@ -20,8 +20,11 @@ public class Military extends Air{
         sb.append(this.getWingspan());
         sb.append(" м; минимальная длина взлётно-посадочной полосы для взлёта - ");
         sb.append(this.getMinLength());
-        if (ejectionSystem){sb.append("; есть система катапультирования; количество ракет на борту - ");}
-        else {sb.append("; нет системы катапультирования; количество ракет на борту - ");}
+        if (ejectionSystem) {
+            sb.append("; есть система катапультирования; количество ракет на борту - ");
+        } else {
+            sb.append("; нет системы катапультирования; количество ракет на борту - ");
+        }
         sb.append(this.getRocket());
         System.out.println(sb);
     }
@@ -51,20 +54,20 @@ public class Military extends Air{
         this.rocket = rocket;
     }
 
-    public void shot(){ //выстрел
-        if (rocket!=0){
+    public void shot() { //выстрел
+        if (rocket != 0) {
             System.out.println("Ракета пошла…");
         }
-        if (rocket==0){
+        if (rocket == 0) {
             System.out.println("Боеприпасы отсутствуют");
         }
     }
 
-    public void ejection(){ //катапультирование
-        if (ejectionSystem){
+    public void ejection() { //катапультирование
+        if (ejectionSystem) {
             System.out.println("Катапультирование прошло успешно");
         }
-        if (!ejectionSystem){
+        if (!ejectionSystem) {
             System.out.println("У вас нет такой системы");
         }
     }

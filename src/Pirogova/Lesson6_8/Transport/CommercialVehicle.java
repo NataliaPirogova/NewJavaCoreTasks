@@ -1,9 +1,9 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class CommercialVehicle extends Overgorund{
+public class CommercialVehicle extends Overground {
     private int capacity;//грузоподъемность, тонны
 
-    public void Characteristic(){
+    public void Characteristic() {
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
         sb.append("тип - грузовой наземный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
@@ -41,11 +41,10 @@ public class CommercialVehicle extends Overgorund{
         this.capacity = capacity;
     }
 
-    public void possibility(int load){  //кол-во груза, которое пробуют загрузить
-        if (load>capacity){
+    public void possibility(int load) {  //кол-во груза, которое пробуют загрузить
+        if (load > capacity) {
             System.out.println("Вам нужен грузовик побольше");
-        }
-        else {
+        } else {
             System.out.println("Грузовик загружен");
         }
     }

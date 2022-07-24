@@ -1,6 +1,6 @@
 package Pirogova.Lesson6_8.Transport;
 
-public class Civilian extends Air{
+public class Civilian extends Air {
     private int passengers;//кол-во пассажиров
     private boolean businessCLass;
 
@@ -13,7 +13,7 @@ public class Civilian extends Air{
         this.businessCLass = businessCLass;
     }
 
-    public void Characteristic(){
+    public void Characteristic() {
         StringBuilder sb = new StringBuilder("Характеристика данного транспортного средства: ");
         sb.append("тип - гражданский воздушный; мощность в лошадиных силах - ");
         sb.append(this.getPower());
@@ -31,8 +31,11 @@ public class Civilian extends Air{
         sb.append(this.getMinLength());
         sb.append(" м; количество пассажиров - ");
         sb.append(this.getPassengers());
-        if (businessCLass){sb.append("; есть бизнесс-класс.");}
-        else {sb.append("; без бизнесс-класса");}
+        if (businessCLass) {
+            sb.append("; есть бизнесс-класс.");
+        } else {
+            sb.append("; без бизнесс-класса");
+        }
         System.out.println(sb);
     }
 
@@ -52,11 +55,10 @@ public class Civilian extends Air{
         this.businessCLass = businessCLass;
     }
 
-    public void possibility(int load){  //кол-во пассажиров, которое пробуют посадить
-        if (load>passengers){
+    public void possibility(int load) {  //кол-во пассажиров, которое пробуют посадить
+        if (load > passengers) {
             System.out.println("Вам нужен самолет побольше");
-        }
-        else {
+        } else {
             System.out.println("Все пассажиры посажены");
         }
     }
