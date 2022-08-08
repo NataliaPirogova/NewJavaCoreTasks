@@ -1,0 +1,21 @@
+package configuration;
+
+import model.Person;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import java.util.Random;
+
+@Configuration
+@ComponentScan
+public class ClassConfig {
+
+    @Bean
+    @Scope(value = "prototype")
+    public Person customPerson(){
+        Random r = new Random();
+        return new Person(5, "Rita",r.nextInt(90));
+    }
+}
