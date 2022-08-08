@@ -1,6 +1,6 @@
-package configuration;
+package by.configuration;
 
-import model.Person;
+import by.model.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Scope;
 import java.util.Random;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages = "by")
 public class ClassConfig {
 
     @Bean
     @Scope(value = "prototype")
-    public Person customPerson(){
+    public Person customPerson() {
         Random r = new Random();
-        return new Person(5, "Rita",r.nextInt(90));
+        return new Person(5, "Rita", r.nextInt(90));
     }
 }

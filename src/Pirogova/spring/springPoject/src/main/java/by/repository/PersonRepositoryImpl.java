@@ -1,12 +1,12 @@
-package repository;
+package by.repository;
 
-import model.Person;
+import by.model.Person;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public class PersonRepositoryImpl implements PersonRepository {
+public class PersonRepositoryImpl implements by.repository.PersonRepository {
 
     private final List<Person> storage = List.of(new Person(1, "Nataly", 27),
             new Person(2, "Raisa", 25),

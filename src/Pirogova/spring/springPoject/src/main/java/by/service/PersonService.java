@@ -1,6 +1,6 @@
-package service;
+package by.service;
 
-import model.Person;
+import by.model.Person;
 
 import java.util.List;
 

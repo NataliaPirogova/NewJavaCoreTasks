@@ -1,14 +1,14 @@
-package service;
+package by.service;
 
-import model.Person;
+import by.model.Person;
+import by.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.PersonRepository;
 
 import java.util.List;
 
 @Service
-public class PersonServiceImpl implements PersonService {
+public class PersonServiceImpl implements by.service.PersonService {
     private final PersonRepository personRepository;
 
     @Autowired

@@ -1,6 +1,6 @@
-package repository;
+package by.repository;
 
-import model.Person;
+import by.model.Person;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package application;
+package by.application;
 
-import configuration.ClassConfig;
+import by.configuration.ClassConfig;
+import by.service.PersonService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import service.PersonService;
 
 
 public class Main {
